@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&family=Roboto&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #0c072a url(img/bg_1.jpg) center center no-repeat;
+
+	background-size: cover;
+	color: #fafafa;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Comfortaa', 'Roboto', sans-serif;
+}
+.container {
+	background-image: linear-gradient(to right, #292f79, #521b58);
+	padding: 3rem;
+	border-radius: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	opacity: 0.75;
+}
+.form {
+	display: grid;
+	row-gap: 1rem;
+	column-gap: 3rem;
+	grid-template-columns: auto auto;
+	justify-content: center;
+	align-items: center;
+}
+.title{
+	letter-spacing: 0.125em; /* 4px/32px */
+	margin: 0;
+	text-align: center;
+}
+.character-amount-container {
+	display: flex;
+	align-items: center;
+}
+.number-input {
+	width: 2rem;
+}
+.password-display{
+	width: 19.7649em; /* 370px/18.72px */
+	height: 2rem;
+	padding: 1rem;
+	background-color: #fcfcfc;
+	color: #111;
+	border: 1px solid #222;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	word-break: break-all;
+	border-radius: .5rem;
+	letter-spacing: 0.053418em; /* 1px/18.72px */
+}
+.btn{
+	grid-column: span 2;
+	background-color: transparent;
+	border: 1px solid #fcfcfc;
+	color: #fcfcfc;
+	padding: .8rem 1rem;
+	cursor: pointer;
+	border-radius: .5rem;
+	font-size: 1rem;
+}
+.btn:hover{
+	background-color: #fcfcfc;
+	color: #292f79;
+}
+/* --- MediaQueries --- */
+@media screen and (max-width: 31.25em) { /* 500px */
+	.title {
+		font-size: 1.625em; /* 26px/16px */
+		letter-spacing: 0.076923em; /* 2px/26px */
+	}
+	.password-display{
+		width: 16.02564em; /* 300px/18.72px */
+		height: 1.5rem;
+		padding: 1rem;
+	}
+	.form {
+		row-gap: 1rem;
+		column-gap: 2rem;
+	}
+}
+@media screen and (max-width: 21.25em ) { /* 340px */
+	.title {
+		font-size: 1.5em; /* 24px/16px */
+		letter-spacing: 0.041666em; /* 1px/24px */
+	}
+	.password-display{
+		width: 13.88888em; /* 260px/18.72px */
+		height: 1.125rem;
+		padding: 0.8rem;
+	}
+	.form {
+		column-gap: 1.5rem;
+	}
+}
